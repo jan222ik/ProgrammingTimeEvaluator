@@ -1,0 +1,24 @@
+plugins {
+    id 'org.jetbrains.kotlin.jvm' version '1.3.61'
+}
+
+group 'com.github.jan222ik.programming.time.evaluator'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
+    compile group: 'no.tornado',
+            name: 'tornadofx',
+            version: '1.7.19'
+}
+
+compileKotlin {
+    kotlinOptions.jvmTarget = "1.8"
+}
+compileTestKotlin {
+    kotlinOptions.jvmTarget = "1.8"
+}
