@@ -12,4 +12,4 @@
 /captures
 .externalNativeBuild
 
-emails\
+emails/*.eml
